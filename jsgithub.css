@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+}
+/* TOP SECTION */
+
+.top-section {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 55px;
+  top: 0;
+}
+
+.top-left {
+  height: 55px;
+}
+
+.github-logo {
+  margin-left: 178px;
+  display: inline-block;
+}
+
+.github-logo span {
+  color: black;
+  margin-top: 10px;
+}
+
+.github-logo span:hover {
+  color: #4183C4;
+}
+
+
+.top-input {
+  font-size: 13px;
+  width: 350px;
+  height: 32px;
+  margin-left: 10px;
+  padding-left: 6px;
+  border-radius: 4px;
+  display: inline-block;
+  border: solid #CCCCCC 1px;
+}
+
+.top-input:active {
+  border: solid #4183C4 1px;
+}
+
+.top-links {
+  position: relative;
+  display:inline-block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.top-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-links a:hover {
+  color: #4183C4;
+}
+
+.top-right {
+  float: right;
+  margin: 12px 4px 0 0;
+  vertical-align: middle;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.top-image img {
+  width: 24px;
+  border-radius: 2px;
+}
+.top-right-links {
+  display: inline-block;
+  float: right;
+  margin: 12px 265px 0 0;
+
+
+}
+
+
+/* DROPDOWN STYLE */
+
+.onclick-menu {
+    position: relative;
+    display: inline-block;
+}
+.onclick-menu:before {
+    content: "";
+    width: 177px;
+
+}
+.onclick-menu:focus {
+    /* clicking on label should toggle the menu */
+    pointer-events: none;
+}
+.onclick-menu:focus .onclick-menu-content {
+    /*  opacity is 1 in opened state (see below) */
+    opacity: 1;
+    visibility: visible;
+
+
+    /* don't let pointer-events affect descendant elements */
+    pointer-events: auto;
+}
+.onclick-menu-content {
+    position: absolute;
+    z-index: 1;
+
+    /* use opacity to fake immediate toggle */
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s;
+    list-style: none;
+    border: solid grey 1px;
+    width: 177px;
+    padding: 0;
+}
+
+.onclick-menu-content button{
+  width: 177px;
+  height: 42px;
+  background: white;
+
+}
+
+
+
+
+.top-username {
+  display: inline-block;
+  color: black;
+  font-size: 15px;
+}
+
+.top-username:hover {
+  color:#4183C4;
+}
+
+
+
+
+/* SIDEBAR STYLES */
+
+.user-sidebar {
+  display: inline-block;
+  position: absolute;
+  margin: 20px 0 0 181px;
+}
+
+.sidebar-image img{
+  width: 254px;
+  border-radius: 5px;
+}
+
+.name {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+.username {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #666;
+  margin: 0;
+
+}
+
+.h5 {
+  border-bottom: solid 1px #EEEEEE;
+}
+
+.location {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.email a {
+  text-decoration: none;
+}
+
+.email a:hover {
+  text-decoration: underline;
+}
+
+.email {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #6483C4;
+}
+
+.joined {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.sidebar-details span {
+  color: #CCCCCC;
+}
+
+.org-avatar img {
+  width: 42px;
+  height: 42px;
+}
+ /* MAIN SECTION */
+
+.main-section {
+  position: absolute;
+  margin-top: 50px;
+}
+
+.main-repos {
+  outline: solid red 1px;
+  position: absolute;
+  display: inline-block;
+  width: 807px;
+  margin-left: 450px;
+
+}
+
+.each-repo {
+  outline: solid blue 1px;
+  border-bottom: solid grey 1px;
+}
