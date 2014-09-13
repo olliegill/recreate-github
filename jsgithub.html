@@ -17,7 +17,7 @@
 
     <div class="top-right-links">
        <div tabindex="0" class="onclick-menu">
-         <span class="octicon octicon-plus">
+         <span class="top-octicons"><span class="octicon octicon-plus">
 
          <ul class="onclick-menu-content">
            <a href="https://github.com/new"<li><button><span class="top-octicons"><span class="octicon octicon-repo"></span></span>
@@ -25,12 +25,11 @@
            <a href="https://github.com/organizations/new"><li><button><span class="top-octicons"><span class="octicon octicon-organization"></span></span>
             New Organization</button></li></a>
           </ul>
-        </span>
+        </span></span>
         </div>
-     </span>
-     <a href="https://github.com/notifications"><span class="top-octicons"><span class="octicon octicon-inbox"></span></span></a>
-     <a href="https://github.com/settings/profile"><span class="top-octicons"><span class="octicon octicon-gear"></span></span></a>
-     <a href="https://github.com"><span class="sign-out"><span class="octicon octicon-sign-out"></span></span></a>
+     <a class="octs4" href="https://github.com/notifications"><span class="top-octicons"><span class="octicon octicon-inbox"></span></span></a>
+     <a class="octs4"href="https://github.com/settings/profile"><span class="top-octicons"><span class="octicon octicon-gear"></span></span></a>
+     <a class="octs4"href="https://github.com"><span class="top-octicons"><span class="octicon octicon-sign-out"></span></span></a>
     </div>
 
    <div class="top-right">
@@ -92,9 +91,9 @@
  <div class="orgs">
    <div class="org-numbers">
      <ul>
-       <li><span class="number1"><%= followers %></span><span>Followers</span></li>
-       <li><span class="number2"></span><span>Starred</span></li>
-       <li><span class="number3"><%= following %></span><span>Following<?</span></li>
+       <li class="li1"><a class="numbera" href="<%= followersUrl %>"><span class="number"><%= followers %></span><div class="number-text">Followers</div></a></li>
+       <li class="li2"><a class="numbera" href="<%= starredUrl %>"<span class="number">6</span><div class="number-text">Starred</div></a></li>
+       <li class="li3"><a class="numbera" href="<%= followingUrl %>"><span class="number"><%= following %></span><div class="number-text">Following</div></a></li>
      </ul>
    </div>
 

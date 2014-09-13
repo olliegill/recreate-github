@@ -36,6 +36,9 @@ var sidebar_stuff = {
   joined2: moment(user.created_at).format('MMM D, YYYY'),
   followers: user.followers,
   following: user.following,
+  followersUrl: user.followers_url,
+  followingUrl: user.following_url,
+  starredUrl: user.starred_url,
 };
 
   myTemplate('user-sidebar-image', '.imagelarge', sidebar_stuff);

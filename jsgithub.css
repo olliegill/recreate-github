@@ -55,6 +55,7 @@ body {
 .top-links a {
   text-decoration: none;
   color: black;
+  padding-left: 10px;
 }
 
 .top-links a:hover {
@@ -76,17 +77,27 @@ body {
 .top-right-links {
   display: inline-block;
   float: right;
-  margin: 12px 265px 0 0;
+  margin: 3px 190px 0 10px;
+  }
 
-
+.top-right-links a {
+  color: black;
 }
 
+.top-octicons {
+  padding-left: 20px;
+}
 
+.top-octicons:hover {
+  cursor: pointer;
+  color: #4183C4;
+}
 /* DROPDOWN STYLE */
 
 .onclick-menu {
     position: relative;
     display: inline-block;
+    border: none;
 }
 .onclick-menu:before {
     content: "";
@@ -94,23 +105,16 @@ body {
 
 }
 .onclick-menu:focus {
-    /* clicking on label should toggle the menu */
     pointer-events: none;
 }
 .onclick-menu:focus .onclick-menu-content {
-    /*  opacity is 1 in opened state (see below) */
     opacity: 1;
     visibility: visible;
-
-
-    /* don't let pointer-events affect descendant elements */
     pointer-events: auto;
 }
 .onclick-menu-content {
     position: absolute;
     z-index: 1;
-
-    /* use opacity to fake immediate toggle */
     opacity: 0;
     visibility: hidden;
     transition: visibility 0.5s;
@@ -159,32 +163,44 @@ body {
 .name {
   font-size: 30px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+  margin: 0 0 5px 0;
 }
 
 .username {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 23px;
+  letter-spacing: 1px;
   font-weight: 300;
   line-height: 24px;
   color: #666;
-  margin: 0;
+  margin: 0 0 15px 0;
 
 }
 
 .h5 {
   border-bottom: solid 1px #EEEEEE;
+  margin-bottom: 15px;
+}
+
+.sidebar-details {
+  border-bottom: solid 1px #EEEEEE;
+}
+.sidebar-details span{
+  width: 20px;
+  height: 20px;
 }
 
 .location {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .email a {
   text-decoration: none;
+  color: #4186CF;
 }
 
 .email a:hover {
@@ -194,21 +210,76 @@ body {
 .email {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: #6483C4;
+  color: #4186CF;
+  margin-bottom: 5px;
 }
 
 .joined {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
+  padding-bottom: 13px;
 }
 
 .sidebar-details span {
   color: #CCCCCC;
 }
 
+/* SIDEBAR STARS AND ORGS */
+
+.org-numbers {
+  border-bottom: solid 1px #EEEEEE;
+
+}
+.org-numbers ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.org-numbers > ul > li {
+  display: inline-block;
+  text-align: center;
+}
+
+.li1 {
+  padding-right: 30px;
+}
+
+.li2 {
+  padding-right: 30px;
+}
+
+.numbera {
+  text-decoration: none;
+}
+
+
+.number {
+  font-size: 30px;
+  color: #4183C4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.number-text {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #99999C;
+  font-size: 12px;
+}
+
+.number-text:hover {
+  color: #4183C4;
+}
+
+.org-text {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  margin: 30px 0 14px 0;
+}
 .org-avatar img {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
+  border-radius: 2px;
 }
  /* MAIN SECTION */
 
@@ -222,7 +293,7 @@ body {
   position: absolute;
   display: inline-block;
   width: 807px;
-  margin-left: 450px;
+  margin-left: 460px;
 
 }
 
