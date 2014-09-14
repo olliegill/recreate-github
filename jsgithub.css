@@ -285,16 +285,65 @@ body {
 
 .main-section {
   position: absolute;
-  margin-top: 50px;
+  margin-top: 22px;
 }
 
+.main-tabs {
+  margin-left: 460px;
+  width: 797px;
+  padding: 0 0 0 10px;
+  height: 38px;
+  border-bottom: solid #EEEEEE 1px;
+
+}
+
+.main-tabs div {
+  display:inline-block;
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 6px 10px 0 6px;
+  color: #666666;
+  height: 31px;
+}
+
+.main-tabs span {
+  padding-right: 4px;
+}
+
+.edit-profile-button {
+  float: right;
+
+}
+
+.edit-profile-button a {
+  text-decoration: none;
+  color: black;
+}
+.edit-profile-button button {
+  width: 108px;
+  height: 29px;
+  border: solid #D5D5D5 1px;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, #FCFCFC, #DDDDDD);
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.edit-profile-button button:hover {
+  background: linear-gradient(to bottom, #FFe, #CDCDCD);
+}
 .main-repos {
-  outline: solid red 1px;
   position: absolute;
   display: inline-block;
   width: 807px;
   margin-left: 460px;
 
+}
+
+.repositories {
+  border: solid #EEEEEE 1px;
+  border-bottom: solid white 1px;
 }
 
 .each-repo {
