@@ -78,8 +78,10 @@ body {
   display: inline-block;
   float: right;
   margin: 3px 190px 0 10px;
-  }
-
+}
+.octs4 span {
+  font-size: 20px;
+}
 .top-right-links a {
   color: black;
 }
@@ -128,10 +130,18 @@ body {
   width: 177px;
   height: 42px;
   background: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  border: none;
 
 }
 
+.onclick-menu-content button:hover {
+  background-color: #4183C4;
+  cursor: pointer;
 
+}
 
 
 .top-username {
@@ -284,8 +294,9 @@ body {
  /* MAIN SECTION */
 
 .main-section {
-  position: absolute;
+  position: relative;
   margin-top: 22px;
+  height: 1168px;
 }
 
 .main-tabs {
@@ -333,12 +344,153 @@ body {
 .edit-profile-button button:hover {
   background: linear-gradient(to bottom, #FFe, #CDCDCD);
 }
+
+.repo-search {
+  display: inline-block;
+  margin: 5px 0 0 460px;
+  padding: 10px 0 10px 0;
+  width: 807px;
+  border-bottom: solid #DDDDDD 1px;
+}
+
+.repo-input {
+  height: 32px;
+  width: 280px;
+  border-radius: 3px;
+  border: solid #CCCCCC 1px;
+  font-size: 15px;
+  padding: 3px;
+}
+
+.search-button {
+  height: 38px;
+  width: 70px;
+  border-radius: 3px;
+  border: solid #CCCCCC 1px;
+  background: linear-gradient(to bottom, #FCFCFC, #DDDDDD);
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.search-button:hover {
+  background: linear-gradient(to bottom, #FFe, #CDCDCD);
+  cursor: pointer;
+}
+
+/* FILTERS STYLE */
+.filter-links{
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+.filter-links span {
+  color: #4183C4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-right: 10px;
+}
+
+.filter-links span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*.filter-links span:active {
+  color: black;
+}
+*/
+
+.filter-links .filter-black {
+  color: black;
+}
+.new {
+  float: right;
+  width: 79px;
+  height: 35px;
+  border: solid #5CA941 1px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #8ADD6D, #60B044);
+
+}
+
+.new span {
+  padding-right: 3px;
+}
+.new a {
+  width: 79px;
+  height: 35px;
+  text-decoration: none;
+  color: white;
+}
+
+.new:hover {
+  background: linear-gradient(to bottom, #60B044, #5CA941);
+
+}
+
+/* MAIN REPOS */
+
 .main-repos {
   position: absolute;
   display: inline-block;
   width: 807px;
+  height: 122px;
   margin-left: 460px;
 
+}
+.each-repo {
+  height: 100px;
+  position: relative;
+
+}
+.each-repo a {
+  text-decoration: none;
+}
+
+.repo-name {
+  color: #4183C4;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.repo-name:hover {
+  text-decoration: underline;
+}
+
+.repo-update {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #888888;
+  font-size: 15px;
+}
+
+.language {
+  position: absolute;
+  display: inline-block;
+  float: right;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #888888;
+  font-size: 14px;
+  left: 81%;
+  bottom: 40px;
+  margin: 50px 0 0 0;
+  width: 150px;
+  text-align: right;
+}
+
+
+.language a {
+  color: #888888;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.language a:hover {
+  color: #4183C4;
 }
 
 .repositories {
@@ -347,6 +499,84 @@ body {
 }
 
 .each-repo {
-  outline: solid blue 1px;
-  border-bottom: solid grey 1px;
+  border-bottom: solid #DDDDDD 1px;
+}
+
+/* FOOTER */
+
+.footer {
+  height: 109px;
+  width: 1075px;
+  bottom: 0;
+  display: inline-block;
+  clear: both;
+  margin-left: 190px;
+  border-top: solid #DDDDDD 1px;
+  padding: 23px 0 0 0;
+}
+
+.copyright {
+  display: inline-block;
+  color: #777777;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+
+}
+.footer-left {
+  display: inline-block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  padding: 0;
+}
+.footer-left li{
+  list-style: none;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.footer-left a {
+  text-decoration: none;
+  color: #4183C4;
+}
+
+.footer-left a:hover {
+  text-decoration: underline;
+}
+.octicon-footer {
+  display: inline-block;
+}
+
+.footer-right {
+  float: right;
+  display: inline-block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  padding: 0;
+}
+
+.footer-right li {
+  display: inline-block;
+  list-style: none;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: #4183C4;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+.octicon-footer {
+  margin-left: 170px;
+}
+
+.octicon-footer span{
+  color: #CCCCCC;
+}
+
+.octicon-footer span:hover {
+  color: #77777F;
 }

@@ -5,6 +5,7 @@ function myTemplate(templateId, container, model) {
   var templateString = $('#' + templateId).text();
   var templateFunction = _.template(templateString);
   var renderTemplate = templateFunction(model);
+  console.log("ID: "+templateId, renderTemplate);
   $(container).append(renderTemplate);
 }
 
@@ -94,3 +95,34 @@ var main_repos = {
 });
 
 });
+
+
+// FILTERS
+
+$(".filter-buttons").on("click", function(){
+
+  $(this).addClass("filter-black");
+  $(this).siblings().removeClass("filter-black");
+
+  if ($(this).text() == "Public") {
+    $(".main-repos").empty();
+      $.getJSON("https://api.github.com/users/olliegill/repos").done(function(repos) {
+
+      _.each(repos, function(repo){
+     var main_repos = {
+           repoName: repo.name,
+           repoUrl: repo.url,
+           language: repo.language,
+           stargazersCount: repo.stargazers_count,
+           stargazersUrl: repo.stargazers_url,
+           forksCount: repo.forks_count,
+           forksUrl: repo.forks_url,
+           updated: repo.updated_at,
+           updated2: moment(repo.created_at).fromNow()
+
+         };
+         console.log(main_repos);
+         myTemplate('main-repos-script', '.main-repos', main_repos);
+    });
+});
+}});
